@@ -1,0 +1,61 @@
+name: 질문
+description: 시도한 내용과 막힌 지점을 공유하고 텍스처 매핑 작업에 필요한 도움을 요청합니다.
+title: "[질문] "
+labels: ["질문"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        기준 문서: `Document/텍스처_매핑_인턴_인수인계.md`
+        아래 네 항목을 채워 주세요. 오류가 확인되면 `버그`, 담당자 결정이 필요하면 `결정필요` 라벨을 추가합니다.
+        답변은 이슈에 남기며, 구두로 답을 받았어도 요점을 댓글로 기록해 주세요.
+  - type: textarea
+    id: goal
+    attributes:
+      label: 무엇을 하려 했나요?
+      description: 목표와 기대한 결과를 적어 주세요.
+      placeholder: 제공된 앞면·뒷면 그림을 각각 캐릭터의 해당 UV 영역에 매핑하고 옆구리 경계를 자연스럽게 연결하려 했습니다.
+    validations:
+      required: true
+  - type: textarea
+    id: attempts
+    attributes:
+      label: 무엇을 해봤나요? (명령·코드·설정)
+      description: 시도한 순서와 각 결과를 적어 주세요. 관련 코드나 블루프린트 설정을 함께 올리면 좋습니다.
+      placeholder: |
+        1. 실행한 명령 / 변경한 코드 / 설정:
+        2. 그 결과:
+        3. 추가로 시도한 방법과 결과:
+    validations:
+      required: true
+  - type: textarea
+    id: blocker
+    attributes:
+      label: 어디서 막혔나요? (오류 메시지·스크린샷)
+      description: 실제 결과와 문제가 발생하는 단계를 적어 주세요. 오류 메시지는 그대로 붙여 넣고 스크린샷은 이 칸에 첨부해 주세요.
+      placeholder: |
+        - 문제가 발생하는 단계:
+        - 실제 결과:
+        - 오류 메시지 (없으면 없음):
+        - 스크린샷 또는 관련 파일 경로:
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: 내 추측
+      description: 원인으로 의심하는 부분과 이유를 적어 주세요. 아직 모르겠다면 모르는 부분을 적어도 됩니다.
+      placeholder: 뒷면 UV가 조회표의 유효 범위 밖을 참조하는 것 같습니다. 정면은 정상이고 뒷면만 검게 나옵니다.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 실행 환경 및 관련 자료
+      description: 재현에 필요한 항목만 작성해 주세요.
+      placeholder: |
+        - 관련 작업 이슈 / 브랜치 / 커밋:
+        - UE 버전 또는 Python·OpenCV 버전:
+        - 카드 PNG 경로 및 템플릿 번호 (1~24):
+        - 메시 / UV / 조회표 / 데이터 에셋 경로:
+        - 실행한 레벨 / 함수:
