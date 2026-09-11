@@ -1,0 +1,69 @@
+# Unreal Engine generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+Packaged/
+
+# Plugin generated folders
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# Visual Studio / Rider / vs Code / Xcode files
+.vs/
+.vscode/
+.idea/
+*.sln
+*.slnx
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.xcodeproj
+*.xcworkspace
+
+# Compiled files
+*.obj
+*.pdb
+*.exe
+*.dll
+*.lib
+*.app
+*.ipa
+
+# Engine template mannequin assets (엔진 TemplateResources에서 복사 — 재현 가능, 임시 리소스)
+Content/Characters/Mannequins/
+
+# YeongamMD environment assets (리소스팀 저장소에서 복사 — 재현 가능, 임시 리소스)
+Content/YeongamMD/
+Content/Asian_town/
+Content/GoodSky/
+Content/ProceduralBiomes/
+Content/Textures/
+Content/FluidSimulation/
+Content/Caustics/
+
+# Generated config backups
+Config/DefaultEditorPerProjectUserSettings.ini.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Crash / log dumps
+*.log
+*.dmp
+
+# AI generated files
+Docs/
+CLAUDE.md
+AGENTS.md
+
+# AI generated folders
+.codex/
+.cursor/
+.gemini/
+.orca/
